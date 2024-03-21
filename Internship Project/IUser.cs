@@ -8,6 +8,8 @@
         public string Password { set; }
         public string Country { get; }
         public string Phone { get; set; }
+        public DateTime Created { get; set; } 
+        public string PictureOrLogo { get; set; }
 
         public void Register(string email, string password) { }
         public void Login() { }

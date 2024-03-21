@@ -9,24 +9,23 @@
         string phone,
         string birthDate,
         string sport
-        ) : IUser
+        ) : User(name,
+        email,
+        password,
+        country
+        )
     {
-        public int? Id { get; set; } = null;
-        public string Name { get; set; } = name;
-        public string LastName { get; set; } = lastName;
-        public string MiddleName { get; set; } = string.Empty;
-        public string Email { get; set; } = email;
-        public string Password { private get; set; } = password;
-        public string Country { get; set; } = country;
-        public string Phone { get; set; } = phone;
-        public string BirthDate { get; set; } = birthDate;
-        public string Sport { get; set; } = sport;
-        public List<IUser> Sponsors { get; set; } = [];
+        private string _phone = phone;
+        private DateTime _birthDate = DateTime.Parse(birthDate);
+        public string LastName = lastName;
+        public string Sport = sport;
+        private List<User> _sponsors = [];
 
-        public void Register(string email, string password) { }
-        public void Login() { }
-        public void Logout() { }
-        public void ResetPassword() { }
-        public void EditProfile() { }
+        public string PhoneNumber => _phone;
+        public DateTime BirthDate => _birthDate;
+        public int Age => (int) (DateTime.Now.Subtract(BirthDate).TotalDays / 365);
+        public List<User> Sponsors => _sponsors;
+     
+        
     }
 }
