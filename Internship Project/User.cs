@@ -27,16 +27,76 @@ namespace Internship_Project
                 Console.WriteLine($"{Name} registered successfully!");
 
             }
-            catch (InvalidOperationException)
+            catch (Exception)
             {
                 currentLog.Success = false;
                 await currentLog.LogMessage(currentLog);
                 await Console.Out.WriteLineAsync($"{Name} could not be registered!");
             }
         }
-        public void Login() { }
-        public void Logout() { }
-        public void ResetPassword() { }
-        public void EditProfile() { }
+        public async Task Login()
+        {
+            Logger currentLog = new("Login", true);
+            try
+            {
+                await currentLog.LogMessage(currentLog);
+                Console.WriteLine($"{Name} logged in successfully!");
+
+            }
+            catch (Exception)
+            {
+                currentLog.Success = false;
+                await currentLog.LogMessage(currentLog);
+                await Console.Out.WriteLineAsync($"Login unsuccessful for {Name}!");
+            }
+        }
+        public async Task Logout()
+        {
+            Logger currentLog = new("Logout", true);
+            try
+            {
+                await currentLog.LogMessage(currentLog);
+                Console.WriteLine($"{Name} logged out successfully!");
+
+            }
+            catch (Exception)
+            {
+                currentLog.Success = false;
+                await currentLog.LogMessage(currentLog);
+                await Console.Out.WriteLineAsync($"{Name} could not log out!");
+            }
+        }
+        public async Task ResetPassword()
+        {
+            Logger currentLog = new("ResetPassword", true);
+            try
+            {
+                await currentLog.LogMessage(currentLog);
+                Console.WriteLine($"{Name} reset password successfully!");
+
+            }
+            catch (Exception)
+            {
+                currentLog.Success = false;
+                await currentLog.LogMessage(currentLog);
+                await Console.Out.WriteLineAsync($"Password for {Name} could not be reset!");
+            }
+        }
+        public async Task EditProfile()
+        {
+            Logger currentLog = new("EditProfile", true);
+            try
+            {
+                await currentLog.LogMessage(currentLog);
+                Console.WriteLine($"{Name} profile edited successfully!");
+
+            }
+            catch (Exception)
+            {
+                currentLog.Success = false;
+                await currentLog.LogMessage(currentLog);
+                await Console.Out.WriteLineAsync($"{Name} profile could not be edited!");
+            }
+        }
     }
 }

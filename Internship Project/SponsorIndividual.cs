@@ -5,7 +5,7 @@
      string email,
      string password,
      string country
-        ) : User( name, email, password, country )
+        ) : User( name, email, password, country ), ISponsor
     {
     }
 }
