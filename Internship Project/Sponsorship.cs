@@ -6,12 +6,14 @@
         Monthly, Annual, SinglePayment // FundRaiser and Donation might be the same?
     }
 
-    public class Sponsorship(SponsorshipLevel level, User sponsor, User athlete, float amount)
+    public class Sponsorship(SponsorshipLevel level, User sponsor, User athlete, decimal amount)
     {
-        public DateTime Created = DateTime.Now;
-        public SponsorshipLevel Level = level;
-        public User Sponsor = sponsor;
-        public User Athlete = athlete;
-        private float _amount = amount;
+        private decimal _amount = amount;
+
+        public DateTime Created { get; set; } = DateTime.Now;
+        public SponsorshipLevel Level { get; set; } = level;
+        public User Sponsor { get; set; } = sponsor;
+        public User Athlete { get; set; } = athlete;
+        public decimal Amount { get => _amount; }
     }
 }

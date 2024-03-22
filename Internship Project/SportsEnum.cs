@@ -10,6 +10,7 @@
         HorseRiding,
         Triathlon,
         Swimming,
+        FreeDiving,
         RoadCycling,
         CrossCountryCycling,
         DownhillMountainBiking,

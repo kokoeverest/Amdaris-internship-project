@@ -2,7 +2,7 @@
 {
     public interface ISponsor
     {
-        public void BecomeSponsor() { }
-        public void CancelSponsorship() { }
+        void BecomeSponsor() { }
+        void CancelSponsorship() { }
     }
 }
