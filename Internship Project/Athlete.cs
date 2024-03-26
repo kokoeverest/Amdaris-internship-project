@@ -15,17 +15,15 @@
         country
         )
     {
-        private string _phone = phone;
-        private DateTime _birthDate = DateTime.Parse(birthDate);
-        public string LastName = lastName;
-        public string Sport = sport;
-        private List<User> _sponsors = [];
-
-        public string PhoneNumber => _phone;
-        public DateTime BirthDate => _birthDate;
+        public string Sport { get; set; } = sport;
+        public string LastName { get; set; } = lastName;
+        public string PhoneNumber { get; set; } = phone;
+        public DateTime BirthDate { get; set; } = DateTime.Parse(birthDate);
         public int Age => (int) (DateTime.Now.Subtract(BirthDate).TotalDays / 365);
-        public List<User> Sponsors => _sponsors;
-     
+
+        public List<User> Sponsors { get; set; } = [];
+        public List<Achievement> Achievements { get; set; } = [];
+        public List<Goal> Goals { get; set; } = [];
         
     }
 }

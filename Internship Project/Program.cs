@@ -28,27 +28,18 @@ Athlete currentAthlete = new("Petar", "Petrov", "mail@mail.mail", "", "Bulgaria"
 //SponsorIndividual sponsor = new (name, email, pass, country);
 //await sponsor.Register();
 await currentAthlete.Register();
-//var sports = GetAllSports();
-
-//foreach (var sport in sports)
-//{
-//    Console.WriteLine(sport);
-//}
-
-//SportsEnum[] GetAllSports()
-//{
-//    var sports = (SportsEnum[])SportsEnum.GetValues(typeof(SportsEnum));
-//    return sports;
-//}
 
 
-// Sponsorship class, enums for monthly, annual, single payment
-// Achievement class
-// Bank account class
 // Database class - for storage of all info (sample schema of the db)
 // implementation for searching for athletes and sponsors with filtering
 // search athletes by name (alphabetically), age (ascending), country, sport, achievements, urgent needs for sponsorship (goal in the near future)
 // search sponsors by name, country, amount of athletes or money provided
-// subscription ...
+
+
+
+
+// Main page
+
+
 
 Console.WriteLine();

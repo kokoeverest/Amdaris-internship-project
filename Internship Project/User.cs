@@ -17,6 +17,12 @@ namespace Internship_Project
         public string Phone { get; set; } = string.Empty;
         public DateTime Created { get; set; } = DateTime.Now;
         public string PictureOrLogo { get; set; } = string.Empty;
+        public string Website { get; set; } = string.Empty;
+        public string FaceBookLink { get; set; } = string.Empty;
+        public string InstagramLink { get; set; } = string.Empty;
+        public string TwitterLink { get; set; } = string.Empty;
+        public string StravaLink { get; set; } = string.Empty;
+        public List<BlogPost> Posts { get; set; } = [];
 
         public async Task Register()
         {

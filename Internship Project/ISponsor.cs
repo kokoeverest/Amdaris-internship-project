@@ -2,7 +2,8 @@
 {
     public interface ISponsor
     {
-        void BecomeSponsor() { }
-        void CancelSponsorship() { }
+        public List<User> SponsoredAthletes { get; set; }
+        public Task BecomeSponsor();
+        public Task CancelSponsorship();
     }
 }
