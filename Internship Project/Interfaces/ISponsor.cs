@@ -1,4 +1,6 @@
-﻿namespace Internship_Project
+﻿using InternshipProject.Domain.Models;
+
+namespace InternshipProject.Domain.Interfaces
 {
     public interface ISponsor
     {

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\InternshipProject.Infrastructure\InternshipProject.Infrastructure.csproj" />	  
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+    <Folder Include="Athletes\Create\" />
+    <Folder Include="Athletes\Responses\" />
+    <Folder Include="BlogPosts\Create\" />
+    <Folder Include="BlogPosts\Responses\" />
+    <Folder Include="Goals\Create\" />
+    <Folder Include="Goals\Responses\" />
+    <Folder Include="SponsorCompanies\Create\" />
+    <Folder Include="SponsorCompanies\Responses\" />
+    <Folder Include="SponsorIndividuals\Create\" />
+    <Folder Include="SponsorIndividuals\Responses\" />
+    <Folder Include="Sponsorships\Create\" />
+    <Folder Include="Sponsorships\Responses\" />
+  </ItemGroup>
+
+</Project>

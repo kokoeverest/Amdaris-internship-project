@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Internship_Project.Achievement">
+    <Position X="1" Y="5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAEAAAAAAQAAECAAAAAAAA=</HashCode>
+      <FileName>Achievement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Internship_Project.Athlete">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="Internship_Project.User" FixedFromPoint="true">
+      <Path>
+        <Point X="5" Y="2.342" />
+        <Point X="4.625" Y="2.342" />
+        <Point X="4.625" Y="5.789" />
+        <Point X="5" Y="5.789" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEEAQAQAAAAAAAAAAACAAAAgIAg=</HashCode>
+      <FileName>Athlete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Internship_Project.SponsorCompany">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="Internship_Project.User" FixedFromPoint="true">
+      <Path>
+        <Point X="5" Y="2.342" />
+        <Point X="4.625" Y="2.342" />
+        <Point X="4.625" Y="1.342" />
+        <Point X="4.25" Y="1.342" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAIAAAAAAAAgAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>SponsorCompany.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.1" />
+  </Class>
+  <Class Name="Internship_Project.SponsorIndividual">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="Internship_Project.User" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="2.342" />
+        <Point X="4.625" Y="2.342" />
+        <Point X="4.625" Y="4.375" />
+        <Point X="3.875" Y="4.375" />
+        <Point X="3.875" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAIIAAAAEAAAgQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SponsorIndividual.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="Internship_Project.Sponsorship">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAEAAACAAAAAAAAAAAAAAACAAAAAAAQBAAAAAAAAAAA=</HashCode>
+      <FileName>Sponsorship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Internship_Project.User">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgjAAhABABAACAAYAAAIBAAQCAAEQIAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="2.009" />
+  </Class>
+  <Class Name="InternshipProject.Domain.Logs.Logger" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAQAAAAAAAAgAAAAAgAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Logs\Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Internship_Project.Goal">
+    <Position X="7" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAIAAAABAACAAAAAAAA=</HashCode>
+      <FileName>Goal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Internship_Project.BlogPost">
+    <Position X="1" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>BlogPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="InternshipProject.Domain.ISponsor">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISponsor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InternshipProject.Domain.IUser">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgjAAhABABAACAAYAAAIBAAQCAAEQIAAAAAA=</HashCode>
+      <FileName>IUser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Internship_Project.SponsorshipLevel" Collapsed="true">
+    <Position X="9" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAgA=</HashCode>
+      <FileName>Sponsorship.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Internship_Project.SportsEnum" Collapsed="true">
+    <Position X="9" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RIgACoAAAAAAAAABAAAAAACAiAAIAAIAAAAAAAABQAA=</HashCode>
+      <FileName>SportsEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Internship_Project.EventsEnum" Collapsed="true">
+    <Position X="9" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAQAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventsEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

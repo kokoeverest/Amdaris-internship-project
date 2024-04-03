@@ -1,4 +1,5 @@
-﻿using Internship_Project;
+﻿using InternshipProject.Domain.Models;
+
 var input = delegate (string s)
 {
     Console.WriteLine(s);
@@ -24,7 +25,7 @@ var input = delegate (string s)
 //    sport
 //    );
 
-Athlete currentAthlete = new("Petar", "Petrov", "mail@mail.mail", "", "Bulgaria", "0812849282", "20/3/1999", "football");
+Athlete currentAthlete = new("Petar", "Petrov", "mail@mail.mail", "", "Bulgaria", "0812849282", "02/4/1999", "football");
 //SponsorIndividual sponsor = new (name, email, pass, country);
 //await sponsor.Register();
 await currentAthlete.Register();
@@ -35,11 +36,6 @@ await currentAthlete.Register();
 // search athletes by name (alphabetically), age (ascending), country, sport, achievements, urgent needs for sponsorship (goal in the near future)
 // search sponsors by name, country, amount of athletes or money provided
 
-
-
-
 // Main page
-
-
 
 Console.WriteLine();

@@ -1,4 +1,6 @@
-﻿namespace Internship_Project
+﻿using InternshipProject.Domain.Models;
+
+namespace InternshipProject.Domain.Interfaces
 {
     public interface IUser
     {
@@ -8,9 +10,9 @@
         public string Password { set; }
         public string Country { get; }
         public string Phone { get; set; }
-        public DateTime Created { get; set; } 
+        public DateTime Created { get; set; }
         public string PictureOrLogo { get; set; }
-        public string Website {  get; set; }
+        public string Website { get; set; }
         public string FaceBookLink { get; set; }
         public string InstagramLink { get; set; }
         public string TwitterLink { get; set; }
